@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report
+title: "[BUG]: "
+labels: ["bug"]
+projects: ["Maliz30/5"]
+assignees:
+  - "Maliz30"
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: tell us what went wrong
+      placeholder: describe your problem here
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: What is the severity of the bug?
+      options: |
+        - high
+        - medium
+        - low
+  - type: textarea
+    id: what-should-happen
+    attributes:
+      label: What should have happen?
+      description: tell us what you were expecting
+      placeholder: describe your expectations here
+    validations:
+      required: false
+  - type: input
+    id: when-happened
+    attributes:
+      label: When did it happen?
+      description: tell us an estimated date of when the problem occurred
+      placeholder: DD/MM/YYYY
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes: 
+      label: Upload screenshots
+      description: drag and drop images here, if you have any
+    validations:
+      required: false

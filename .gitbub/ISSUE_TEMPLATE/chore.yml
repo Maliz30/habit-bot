@@ -1,0 +1,15 @@
+name: Chore
+description: File a chore report
+title: "[Chore]: "
+labels: ["chore"]
+projects: ["Maliz30/5"]
+assignees: 
+  - "Maliz30"
+body:
+  - type: textarea
+    id: chore-description
+    attributes:
+      label: Describe the chore here
+      description: provide details about the task that needs to be done.
+    validations:
+      required: true
