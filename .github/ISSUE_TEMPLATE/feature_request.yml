@@ -1,0 +1,36 @@
+name: Feature Request
+description: File a feature request
+title: "[US-]: "
+labels: ["enhancement"]
+projects: ["Maliz30/5"]
+assignees:
+  - "Maliz30"
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the feature here in Portuguese and with the US structure
+      description: como usuário, eu quero... para que...
+      placeholder: "Como usuário, eu quero [ação] para que [benefício]"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: List the acceptance criteria here
+      description: what must be done for this feature to be considered done?
+      placeholder: |
+        - [ ] first criterion
+        - [ ] second criterion
+        - [ ] ...
+      value: " - [ ]"
+
+    validations:
+      required: true
+  - type: textarea
+    id: anything-else
+    attributes: 
+      label: Is there anything else that you want to specify for this feature?
+      description: add any other observations here
+    validations:
+      required: false
